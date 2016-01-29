@@ -1,0 +1,17 @@
+{
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Principal": {
+                "AWS": [
+                    "xrn:aws:iam::AWS-account-ID:user/bob",
+                    "xrn:aws:iam::998877:*"
+                ]
+            }
+        }
+    ]
+}
